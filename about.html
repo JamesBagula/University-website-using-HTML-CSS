@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="degree.html">Degree's</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!----------------------------About Us Content---------------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eveniet architecto eum ut laudantium ab soluta repellendus 
+                    nemo, voluptatem placeat, nam dignissimos eius in cumque debitis 
+                    accusamus, nesciunt voluptatum veniam at!</p>
+                    <a href="about.html" class="course-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+
+<!------------------------------Footer---------------------->
+<footer id="footer">
+    <div class="upper-footer">
+        <div class="up-left">
+            <div class="image">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="content">
+                <h2 class="footer-heading"> About Us</h2>
+                <p class="description">
+                    Cambridge University is the best university of all time and are the largest university, 
+                    we are since 1890 and till now the university is the best one...</p>
+            </div>
+        </div>
+        <div class="up-right">
+            <h2 class="footer-heading"> Follow us</h2>
+            <ul>
+                <li class="linkedIn"><a href="index.html"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li class="instagram"><a href="index.html"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="youtube"><a href="index.html"><i class="fa-brands fa-youtube"></i></a></li>
+                <li class="github"><a href="index.html"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="down-footer">
+        <p class="leftPara">Copyright &copy; 2023 || Developed by James Bagula</p>
+        <ul class="footer-li">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Degree's</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
